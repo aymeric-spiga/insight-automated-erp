@@ -1,0 +1,6 @@
+sol1=444
+sol2=452
+mindrop=0.7
+maxdrop=100.0
+ws=180
+
