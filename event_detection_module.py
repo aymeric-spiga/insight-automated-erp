@@ -527,7 +527,7 @@ def write_erp_function_dd(events,channels,rate,ratemin,event_type,bbid,PRODGROUP
     fobj.write('<EVENT_REQUEST_PROPOSAL>\n')
     metadatastring='  <META_DATA productionTime="' + datenow_string + '" eventInternalID="' + eventid + '" producer="SEIS Data Portal" schemaName="INS-SI-GRDS-2297-CNES.XSD" schemaVersion="1.6">'
     fobj.write('%s\n' % metadatastring)
-    fobj.write('    <FIRST_PRODUCER producerGroup="'+PRODGROUP+'" institution="ISAE" userName="R.F. Garcia" userEmail="raphael.garcia@isae.fr"/>\n')
+    fobj.write('    <FIRST_PRODUCER producerGroup="'+PRODGROUP+'" institution="LMD" userName="A. Spiga" userEmail="aymeric.spiga@lmd.jussieu.fr"/>\n')
     fobj.write('  </META_DATA>\n')
     erp_def_string='  <ERP_DEFINITION requestType="' + event_type + '">'
     fobj.write('%s\n' % erp_def_string)
