@@ -11,7 +11,7 @@ Request to the user
 - SISMOC login and password
 In the end results are in ERP_xml_SOLS_453_454
 
-## what the program do:
+## what the program does:
 1-
 python ./auto_eventwindow_pressure_dd_erp.py --sol1 $sol1 --sol2 $sol2
 is downloading the pressure data, detecting the dust devils and creating the ERP files (*.xml)
