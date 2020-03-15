@@ -35,27 +35,27 @@ xml_files=`ls *.xml`
 xml_save_path='./ERP_xml'
 echo $xml_files
 
-# Put there your login password, 
-# or use the code below if you do not want to hard code login and password
-username=""
-pwd=""
-# Other option to avoid hard coding the login pasword (not tested by RF Garcia)
+## Put there your login password, 
+## or use the code below if you do not want to hard code login and password
+#username=""
+#pass=""
+## Other option to avoid hard coding the login pasword (not tested by RF Garcia)
 #if [ -z "$1" ]; then
-#read -p "username ? " rep
-#username=$rep
+read -p "username ? " rep
+username=$rep
 #else
 #username=${1}
 #fi
 #
 #if [ -z "$2" ]; then
-#read -s -p "password ? " repp
-#pass=$repp
+read -p "password ? " repp
+pass=$repp
 #else
 #pass=${2}
 #fi
 
 # get auth_token
-auth_token=`curl -sS -f -X POST "${SISMOC_REST_SERVER_URL}/auth"  -H "Content-Type: application/json"  -d "{\"username\":\"${username}\", \"password\":\"${pwd}\"}"  | jq -r '.jwt'`
+auth_token=`curl -sS -f -X POST "${SISMOC_REST_SERVER_URL}/auth"  -H "Content-Type: application/json"  -d "{\"username\":\"${username}\", \"password\":\"${pass}\"}"  | jq -r '.jwt'`
 echo $auth_token
 
 # loop over all ERP xml files in the current directory
