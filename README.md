@@ -17,3 +17,9 @@ sismoc-client-post-erp.bash
 send the ERPs to SISMOC and save the ERP xml files into directory ERP_xml
 parameters defined inside the file
 
+
+
+## install notes
+
+conda create -n erp python=2.7
+conda install -c conda-forge obspy
