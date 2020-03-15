@@ -13,8 +13,8 @@ sol2=455
 # Dust devils detection and ERP writing in xml format production
 python ./auto_eventwindow_pressure_dd_erp.py --sol1 $sol1 --sol2 $sol2
 
-# SENDING THE ERPs to SISMOC
-# get the authentification token
-# create zip file with ERP xml files and send it to the SISMOC API
-# move the xml ERPs created into ERP_xml folder
-sismoc-client-post-erp.bash
+## SENDING THE ERPs to SISMOC
+## get the authentification token
+## create zip file with ERP xml files and send it to the SISMOC API
+## move the xml ERPs created into ERP_xml folder
+./sismoc-client-post-erp.bash
