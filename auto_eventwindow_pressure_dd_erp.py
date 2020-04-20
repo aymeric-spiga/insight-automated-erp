@@ -38,7 +38,7 @@ import obspy
 # default parameters
 sol1 = 443
 sol2 = 443
-mindrop=0.7
+mindrop=0.3
 # inserted to avoid repeat of previous ERPs sent by C. Perrin
 maxdrop=100.0
 ws=180
